@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14BD1813-011E-4BD7-8049-1AF5A5B7FCD9}</ProjectGuid>
+    <RootNamespace>Project7</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="buffered.h" />
+    <ClInclude Include="htmlencode.h" />
+    <ClInclude Include="istreamsequence.h" />
+    <ClInclude Include="markdownparser.h" />
+    <ClInclude Include="markdownscanner.h" />
+    <ClInclude Include="mockparser.h" />
+    <ClInclude Include="mockscanner.h" />
+    <ClInclude Include="nodes.h" />
+    <ClInclude Include="parser.h" />
+    <ClInclude Include="postprocessor.h" />
+    <ClInclude Include="queue.h" />
+    <ClInclude Include="scanner.h" />
+    <ClInclude Include="sequence.h" />
+    <ClInclude Include="stringsequence.h" />
+    <ClInclude Include="token.h" />
+    <ClInclude Include="utf8sequence.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="htmlencode.cpp" />
+    <ClCompile Include="istreamsequence.cpp" />
+    <ClCompile Include="main_compiler.cpp" />
+    <ClCompile Include="main_parser.cpp" />
+    <ClCompile Include="main_scanner.cpp" />
+    <ClCompile Include="markdownparser.cpp" />
+    <ClCompile Include="markdownscanner.cpp" />
+    <ClCompile Include="mockparser.cpp" />
+    <ClCompile Include="mockscanner.cpp" />
+    <ClCompile Include="nodes.cpp" />
+    <ClCompile Include="parser.cpp" />
+    <ClCompile Include="postprocessor.cpp" />
+    <ClCompile Include="scanner.cpp" />
+    <ClCompile Include="sequence.cpp" />
+    <ClCompile Include="stringsequence.cpp" />
+    <ClCompile Include="test_postprocessor.cpp" />
+    <ClCompile Include="test_sequence.cpp" />
+    <ClCompile Include="token.cpp" />
+    <ClCompile Include="utf8sequence.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="bold1.html" />
+    <None Include="bold1.md" />
+    <None Include="bold1ref.html" />
+    <None Include="bold2.html" />
+    <None Include="bold2.md" />
+    <None Include="bold2ref.html" />
+    <None Include="bold3.html" />
+    <None Include="bold3.md" />
+    <None Include="bold4.html" />
+    <None Include="ex1.html" />
+    <CustomBuild Include="ex1.md">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(TargetPath) $(ProjectDir)/ex1.md</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)/ex1.html;%(Outputs)</Outputs>
+      <DeploymentContent>false</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <None Include="ex2.html" />
+    <None Include="ex2.md" />
+    <None Include="ex3.html" />
+    <None Include="ex3.md" />
+    <None Include="ex4.html" />
+    <None Include="ex4.md" />
+    <None Include="hello.html" />
+    <None Include="italics.html" />
+    <None Include="italics.md" />
+    <None Include="parser.bat" />
+    <None Include="README.md" />
+    <None Include="test1.html" />
+    <None Include="test2.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="command.txt" />
+    <Text Include="grammar.txt" />
+    <Text Include="hello.txt" />
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

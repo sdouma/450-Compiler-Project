@@ -1,0 +1,564 @@
+
+C:\Users\sdouma3\Documents\Visual Studio 2013\Projects\Project7\Project7>..\Debug\Project7.exe "bold1.md"  
+scanning bold1.md
+start()
+added cursor at 0
+reset token stream to 0
+optional_header()
+added cursor at 0
+
+C:\Users\sdouma3\Documents\Visual Studio 2013\Projects\Project7\Project7>..\Debug\Project7.exe "bold1.md"  
+scanning bold1.md
+start()
+added cursor at 0
+reset token stream to 0
+optional_header()
+added cursor at 0
+0isopen=205<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+header()
+added cursor at 0
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+reset token stream to 0
+markup()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+markup() = 0
+reset token stream to 0
+header() = 0
+reset token stream to 0
+323dom: Statements()
+optional_header() = 1
+statements()
+added cursor at 0
+reset token stream to 0
+paragraph()
+added cursor at 0
+reset token stream to 0
+sentence()
+added cursor at 0
+reset token stream to 0
+bold()
+added cursor at 0
+reset token stream to 0
+open_bold()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) found (00528ED0)
+open_bold() = 1
+statements()
+added cursor at 1
+reset token stream to 1
+paragraph()
+added cursor at 1
+reset token stream to 1
+sentence()
+added cursor at 1
+reset token stream to 1
+bold()
+added cursor at 1
+reset token stream to 1
+open_bold()
+2isopen=1<br/>'&#104;&#105;&#39;&#39;'@6
+token(text) not found
+open_bold() = 0
+bold() = 0
+reset token stream to 1
+italic()
+added cursor at 1
+reset token stream to 1
+open_italic()
+<br/>'&#104;&#105;&#39;&#39;'@6
+token(text) not found
+open_italic() = 0
+italic() = 0
+reset token stream to 1
+underline()
+added cursor at 1
+reset token stream to 1
+open_underline()
+<br/>'&#104;&#105;&#39;&#39;'@6
+token(text) not found
+open_underline() = 0
+underline() = 0
+reset token stream to 1
+text()
+<br/>'&#104;&#105;&#39;&#39;'@6
+token(text) found (0052A218)
+125dom: Paragraph[content=<i>hi''</i>]()
+text() = 1
+276dom: Paragraph[content=<i>hi''</i>]()
+sentence() = 1
+rest_of_paragraph()
+added cursor at 2
+reset token stream to 2
+eol()
+6isopen=1<br/>[EOF]@6
+token(end of file) not found
+eol() = 0
+reset token stream to 2
+eol()
+<br/>[EOF]@6
+token(end of file) not found
+eol() = 0
+reset token stream to 2
+376dom: Paragraph[content=<i></i>]()
+rest_of_paragraph() = 1
+344dom: Paragraph[content=<i>hi''</i>]()
+paragraph() = 1
+statements()
+added cursor at 2
+reset token stream to 2
+paragraph()
+added cursor at 2
+reset token stream to 2
+sentence()
+added cursor at 2
+reset token stream to 2
+bold()
+added cursor at 2
+reset token stream to 2
+open_bold()
+<br/>[EOF]@6
+token(end of file) not found
+open_bold() = 0
+bold() = 0
+reset token stream to 2
+italic()
+added cursor at 2
+reset token stream to 2
+open_italic()
+<br/>[EOF]@6
+token(end of file) not found
+open_italic() = 0
+italic() = 0
+reset token stream to 2
+underline()
+added cursor at 2
+reset token stream to 2
+open_underline()
+<br/>[EOF]@6
+token(end of file) not found
+open_underline() = 0
+underline() = 0
+reset token stream to 2
+text()
+<br/>[EOF]@6
+token(end of file) not found
+text() = 0
+sentence() = 0
+reset token stream to 2
+paragraph() = 0
+reset token stream to 2
+408dom: Statements()
+statements() = 1
+408dom: Statements([0]=Paragraph[content=<i>hi''</i>]()
+)
+statements() = 1
+close_bold()
+<br/>[EOF]@6
+token(end of file) not found
+close_bold() = 0
+bold() = 0
+reset token stream to 0
+italic()
+added cursor at 0
+reset token stream to 0
+open_italic()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+open_italic() = 0
+italic() = 0
+reset token stream to 0
+underline()
+added cursor at 0
+reset token stream to 0
+open_underline()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+open_underline() = 0
+underline() = 0
+reset token stream to 0
+text()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+text() = 0
+sentence() = 0
+reset token stream to 0
+paragraph() = 0
+reset token stream to 0
+408dom: Statements()
+statements() = 1
+eof()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+eof() = 0
+reset token stream to 0
+start() = 0
+the number of paragraphs is 0
+syntax error.
+
+C:\Users\sdouma3\Documents\Visual Studio 2013\Projects\Project7\Project7>..\Debug\Project7.exe "bold1.md"  
+scanning bold1.md
+start()
+added cursor at 0
+reset token stream to 0
+optional_header()
+added cursor at 0
+0isopen=205<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+header()
+added cursor at 0
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+reset token stream to 0
+markup()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+markup() = 0
+reset token stream to 0
+header() = 0
+reset token stream to 0
+323dom: Statements()
+optional_header() = 1
+statements()
+added cursor at 0
+reset token stream to 0
+paragraph()
+added cursor at 0
+reset token stream to 0
+sentence()
+added cursor at 0
+reset token stream to 0
+bold()
+added cursor at 0
+reset token stream to 0
+open_bold()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) found (00608ED0)
+open_bold() = 1
+statements()
+added cursor at 1
+reset token stream to 1
+paragraph()
+added cursor at 1
+reset token stream to 1
+sentence()
+added cursor at 1
+reset token stream to 1
+bold()
+added cursor at 1
+reset token stream to 1
+open_bold()
+2isopen=1<br/>'&#104;&#105;&#32;&#39;&#39;'@7
+token(text) not found
+open_bold() = 0
+bold() = 0
+reset token stream to 1
+italic()
+added cursor at 1
+reset token stream to 1
+open_italic()
+<br/>'&#104;&#105;&#32;&#39;&#39;'@7
+token(text) not found
+open_italic() = 0
+italic() = 0
+reset token stream to 1
+underline()
+added cursor at 1
+reset token stream to 1
+open_underline()
+<br/>'&#104;&#105;&#32;&#39;&#39;'@7
+token(text) not found
+open_underline() = 0
+underline() = 0
+reset token stream to 1
+text()
+<br/>'&#104;&#105;&#32;&#39;&#39;'@7
+token(text) found (0060A218)
+125dom: Paragraph[content=<i>hi ''</i>]()
+text() = 1
+276dom: Paragraph[content=<i>hi ''</i>]()
+sentence() = 1
+rest_of_paragraph()
+added cursor at 2
+reset token stream to 2
+eol()
+7isopen=1<br/>[EOF]@7
+token(end of file) not found
+eol() = 0
+reset token stream to 2
+eol()
+<br/>[EOF]@7
+token(end of file) not found
+eol() = 0
+reset token stream to 2
+376dom: Paragraph[content=<i></i>]()
+rest_of_paragraph() = 1
+344dom: Paragraph[content=<i>hi ''</i>]()
+paragraph() = 1
+statements()
+added cursor at 2
+reset token stream to 2
+paragraph()
+added cursor at 2
+reset token stream to 2
+sentence()
+added cursor at 2
+reset token stream to 2
+bold()
+added cursor at 2
+reset token stream to 2
+open_bold()
+<br/>[EOF]@7
+token(end of file) not found
+open_bold() = 0
+bold() = 0
+reset token stream to 2
+italic()
+added cursor at 2
+reset token stream to 2
+open_italic()
+<br/>[EOF]@7
+token(end of file) not found
+open_italic() = 0
+italic() = 0
+reset token stream to 2
+underline()
+added cursor at 2
+reset token stream to 2
+open_underline()
+<br/>[EOF]@7
+token(end of file) not found
+open_underline() = 0
+underline() = 0
+reset token stream to 2
+text()
+<br/>[EOF]@7
+token(end of file) not found
+text() = 0
+sentence() = 0
+reset token stream to 2
+paragraph() = 0
+reset token stream to 2
+408dom: Statements()
+statements() = 1
+408dom: Statements([0]=Paragraph[content=<i>hi ''</i>]()
+)
+statements() = 1
+close_bold()
+<br/>[EOF]@7
+token(end of file) not found
+close_bold() = 0
+bold() = 0
+reset token stream to 0
+italic()
+added cursor at 0
+reset token stream to 0
+open_italic()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+open_italic() = 0
+italic() = 0
+reset token stream to 0
+underline()
+added cursor at 0
+reset token stream to 0
+open_underline()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+open_underline() = 0
+underline() = 0
+reset token stream to 0
+text()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+text() = 0
+sentence() = 0
+reset token stream to 0
+paragraph() = 0
+reset token stream to 0
+408dom: Statements()
+statements() = 1
+eof()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+eof() = 0
+reset token stream to 0
+start() = 0
+the number of paragraphs is 0
+syntax error.
+
+C:\Users\sdouma3\Documents\Visual Studio 2013\Projects\Project7\Project7>..\Debug\Project7.exe "bold1.md"  
+scanning bold1.md
+start()
+added cursor at 0
+reset token stream to 0
+optional_header()
+added cursor at 0
+0isopen=205<br/>''&#39;&#39;&#39;*]@2
+token(open bold) not found
+header()
+added cursor at 0
+<br/>''&#39;&#39;&#39;*]@2
+token(open bold) not found
+reset token stream to 0
+markup()
+<br/>''&#39;&#39;&#39;*]@2
+token(open bold) not found
+markup() = 0
+reset token stream to 0
+header() = 0
+reset token stream to 0
+323dom: Statements()
+optional_header() = 1
+statements()
+added cursor at 0
+reset token stream to 0
+paragraph()
+added cursor at 0
+reset token stream to 0
+sentence()
+added cursor at 0
+reset token stream to 0
+bold()
+added cursor at 0
+reset token stream to 0
+open_bold()
+<br/>''&#39;&#39;&#39;*]@2
+token(open bold) found (00568ED0)
+open_bold() = 1
+statements()
+added cursor at 1
+reset token stream to 1
+paragraph()
+added cursor at 1
+reset token stream to 1
+sentence()
+added cursor at 1
+reset token stream to 1
+bold()
+added cursor at 1
+reset token stream to 1
+open_bold()
+2isopen=1<br/>'&#104;&#105;&#32;'@5
+token(text) not found
+open_bold() = 0
+bold() = 0
+reset token stream to 1
+italic()
+added cursor at 1
+reset token stream to 1
+open_italic()
+<br/>'&#104;&#105;&#32;'@5
+token(text) not found
+open_italic() = 0
+italic() = 0
+reset token stream to 1
+underline()
+added cursor at 1
+reset token stream to 1
+open_underline()
+<br/>'&#104;&#105;&#32;'@5
+token(text) not found
+open_underline() = 0
+underline() = 0
+reset token stream to 1
+text()
+<br/>'&#104;&#105;&#32;'@5
+token(text) found (0056A218)
+125dom: Paragraph[content=<i>hi </i>]()
+text() = 1
+276dom: Paragraph[content=<i>hi </i>]()
+sentence() = 1
+rest_of_paragraph()
+added cursor at 2
+reset token stream to 2
+eol()
+
+C:\Users\sdouma3\Documents\Visual Studio 2013\Projects\Project7\Project7>..\Debug\Project7.exe "bold1.md"  
+scanning bold1.md
+start()
+added cursor at 0
+reset token stream to 0
+optional_header()
+added cursor at 0
+0isopen=205<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+header()
+added cursor at 0
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+reset token stream to 0
+markup()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) not found
+markup() = 0
+reset token stream to 0
+header() = 0
+reset token stream to 0
+323dom: Statements()
+optional_header() = 1
+statements()
+added cursor at 0
+reset token stream to 0
+paragraph()
+added cursor at 0
+reset token stream to 0
+sentence()
+added cursor at 0
+reset token stream to 0
+bold()
+added cursor at 0
+reset token stream to 0
+open_bold()
+<br/>[*&#39;&#39;&#39;*]@2
+token(open bold) found (00418ED0)
+open_bold() = 1
+statements()
+added cursor at 1
+reset token stream to 1
+paragraph()
+added cursor at 1
+reset token stream to 1
+sentence()
+added cursor at 1
+reset token stream to 1
+bold()
+added cursor at 1
+reset token stream to 1
+open_bold()
+2isopen=1<br/>'&#104;&#105;&#32;'@5
+token(text) not found
+open_bold() = 0
+bold() = 0
+reset token stream to 1
+italic()
+added cursor at 1
+reset token stream to 1
+open_italic()
+<br/>'&#104;&#105;&#32;'@5
+token(text) not found
+open_italic() = 0
+italic() = 0
+reset token stream to 1
+underline()
+added cursor at 1
+reset token stream to 1
+open_underline()
+<br/>'&#104;&#105;&#32;'@5
+token(text) not found
+open_underline() = 0
+underline() = 0
+reset token stream to 1
+text()
+<br/>'&#104;&#105;&#32;'@5
+token(text) found (0041A218)
+125dom: Paragraph[content=<i>hi </i>]()
+text() = 1
+276dom: Paragraph[content=<i>hi </i>]()
+sentence() = 1
+rest_of_paragraph()
+added cursor at 2
+reset token stream to 2
+eol()

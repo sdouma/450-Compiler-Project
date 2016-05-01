@@ -1,0 +1,36 @@
+eof : EOF
+eol : EOL
+markup: MARKUP
+text : TEXT
+open_bold : BOLD_OPEN_MARK
+close_bold : BOLD_CLOSE_MARK
+open_italic : ITALIC_OPEN_MARK
+close_italic : ITALIC_CLOSE_MARK
+open_underline : UNDERLINE_OPEN_MARK
+close_underline : UNDERLINE_CLOSE_MARK
+
+bold : open_bold statements close_bold
+italic : open_italic statements close_italic
+underline : open_underline statements close_underline
+sentence : bold | italic | underline | text
+header : markup TEXT EOL
+optional_header : header | /* null */
+paragraph : sentence rest_of_paragraph
+rest_of_paragraph : eol paragraph | eol rest_of_paragraph | /* null */
+statements : paragraph statements | /* null */
+start : optional_header statements eof
+-----
+EOF : -1
+EOL : '\r' or '\n'
+MARKUP: '#' (1 or more at beginning of file)
+BOLD_OPEN_MARK: "'''*"
+BOLD_CLOSE_MARK: ""
+ITALIC_OPEN_MARK: "[/"
+ITALIC_CLOSE_MARK: "/]"
+UNDERLINE_OPEN_MARK: "[_"
+UNDERLINE_CLOSE_MARK: "_]"
+TEXT:  anything else
+
+
+
+
