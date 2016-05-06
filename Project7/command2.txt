@@ -1,0 +1,247 @@
+
+C:\Users\sdouma3\Documents\Visual Studio 2013\Projects\Project7\Project7>..\Debug\Project7.exe "bold1.md"  
+scanning bold1.md
+start()
+added cursor at 0
+reset token stream to 0
+optional_header()
+added cursor at 0
+<br/>[*&#91;&#42;*]@2
+token(open bold) not found
+header()
+added cursor at 0
+<br/>[*&#91;&#42;*]@2
+token(open bold) not found
+reset token stream to 0
+markup()
+<br/>[*&#91;&#42;*]@2
+token(open bold) not found
+markup() = 0
+reset token stream to 0
+header() = 0
+reset token stream to 0
+323dom: Statements()
+optional_header() = 1
+statements()
+added cursor at 0
+reset token stream to 0
+paragraph()
+added cursor at 0
+reset token stream to 0
+sentence()
+added cursor at 0
+reset token stream to 0
+bold()
+added cursor at 0
+reset token stream to 0
+open_bold()
+<br/>[*&#91;&#42;*]@2
+token(open bold) found (00478D10)
+open_bold() = 1
+statements()
+added cursor at 1
+reset token stream to 1
+paragraph()
+added cursor at 1
+reset token stream to 1
+sentence()
+added cursor at 1
+reset token stream to 1
+bold()
+added cursor at 1
+reset token stream to 1
+open_bold()
+<br/>'&#32;&#104;&#105;&#32;'@6
+token(text) not found
+open_bold() = 0
+bold() = 0
+reset token stream to 1
+italic()
+added cursor at 1
+reset token stream to 1
+open_italic()
+<br/>'&#32;&#104;&#105;&#32;'@6
+token(text) not found
+open_italic() = 0
+italic() = 0
+reset token stream to 1
+underline()
+added cursor at 1
+reset token stream to 1
+open_underline()
+<br/>'&#32;&#104;&#105;&#32;'@6
+token(text) not found
+open_underline() = 0
+underline() = 0
+reset token stream to 1
+text()
+<br/>'&#32;&#104;&#105;&#32;'@6
+token(text) found (0047B9D8)
+125dom: Paragraph[content=<i> hi </i>]()
+text() = 1
+276dom: Paragraph[content=<i> hi </i>]()
+sentence() = 1
+rest_of_paragraph()
+added cursor at 2
+reset token stream to 2
+eol()
+<br/>*]@8
+token(bold close) not found
+eol() = 0
+reset token stream to 2
+eol()
+<br/>*]@8
+token(bold close) not found
+eol() = 0
+reset token stream to 2
+376dom: Paragraph[content=<i></i>]()
+rest_of_paragraph() = 1
+344dom: Paragraph[content=<i> hi </i>]()
+paragraph() = 1
+statements()
+added cursor at 2
+reset token stream to 2
+paragraph()
+added cursor at 2
+reset token stream to 2
+sentence()
+added cursor at 2
+reset token stream to 2
+bold()
+added cursor at 2
+reset token stream to 2
+open_bold()
+<br/>*]@8
+token(bold close) not found
+open_bold() = 0
+bold() = 0
+reset token stream to 2
+italic()
+added cursor at 2
+reset token stream to 2
+open_italic()
+<br/>*]@8
+token(bold close) not found
+open_italic() = 0
+italic() = 0
+reset token stream to 2
+underline()
+added cursor at 2
+reset token stream to 2
+open_underline()
+<br/>*]@8
+token(bold close) not found
+open_underline() = 0
+underline() = 0
+reset token stream to 2
+text()
+<br/>*]@8
+token(bold close) not found
+text() = 0
+sentence() = 0
+reset token stream to 2
+paragraph() = 0
+reset token stream to 2
+408dom: Statements()
+statements() = 1
+408dom: Statements([0]=Paragraph[content=<i> hi </i>]()
+)
+statements() = 1
+close_bold()
+<br/>*]@8
+token(bold close) found (0047CA90)
+close_bold() = 1
+217dom: ''([0]=Statements([0]=Paragraph[content=<i> hi </i>]()
+)
+)
+
+bold() = 1
+276dom: ''([0]=Statements([0]=Paragraph[content=<i> hi </i>]()
+)
+)
+
+sentence() = 1
+rest_of_paragraph()
+added cursor at 3
+reset token stream to 3
+eol()
+<br/>[EOF]@8
+token(end of file) not found
+eol() = 0
+reset token stream to 3
+eol()
+<br/>[EOF]@8
+token(end of file) not found
+eol() = 0
+reset token stream to 3
+376dom: Paragraph[content=<i></i>]()
+rest_of_paragraph() = 1
+344dom: ''([0]=Statements([0]=Paragraph[content=<i> hi </i>]()
+)
+)
+
+paragraph() = 1
+statements()
+added cursor at 3
+reset token stream to 3
+paragraph()
+added cursor at 3
+reset token stream to 3
+sentence()
+added cursor at 3
+reset token stream to 3
+bold()
+added cursor at 3
+reset token stream to 3
+open_bold()
+<br/>[EOF]@8
+token(end of file) not found
+open_bold() = 0
+bold() = 0
+reset token stream to 3
+italic()
+added cursor at 3
+reset token stream to 3
+open_italic()
+<br/>[EOF]@8
+token(end of file) not found
+open_italic() = 0
+italic() = 0
+reset token stream to 3
+underline()
+added cursor at 3
+reset token stream to 3
+open_underline()
+<br/>[EOF]@8
+token(end of file) not found
+open_underline() = 0
+underline() = 0
+reset token stream to 3
+text()
+<br/>[EOF]@8
+token(end of file) not found
+text() = 0
+sentence() = 0
+reset token stream to 3
+paragraph() = 0
+reset token stream to 3
+408dom: Statements()
+statements() = 1
+408dom: Statements([0]=''([0]=Statements([0]=Paragraph[content=<i> hi </i>]()
+)
+)
+
+)
+statements() = 1
+eof()
+<br/>[EOF]@8
+token(end of file) found (0047CB48)
+eof() = 1
+429dom: Statements([0]=Statements([0]=''([0]=Statements([0]=Paragraph[content=<i> hi </i>]()
+)
+)
+
+)
+)
+start() = 1
+the number of paragraphs is 1
