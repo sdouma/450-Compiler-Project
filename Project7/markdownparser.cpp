@@ -209,7 +209,7 @@ public:
 		bool ans = (at.reset() && open_bold() && statements(domText) && close_bold());
 		if (ans) {
 			MarkupNode *node = new MarkupNode();
-			node->markup = L"[*";
+			node->markup = L"''";
 			node->children.push_back(domText);
 			dom=NodeSP(node);
 		}
