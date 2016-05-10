@@ -21,36 +21,45 @@ void Token::print(std::ostream &out) const
     out << "[EOL]" << std::endl;
   } else if (type == Token::BOLD_OPEN_MARK) 
     {
-    out << "[*";
+    out << "''";
     for (size_t i=0; i<value.length(); ++i) {
       out << "&#" << (int) value[i] << ";";
     }
-    out << "*]";
+    out << "''";
   } else if (type == Token::ITALIC_OPEN_MARK) 
     {
-    out << "[/";
+    out << "'''";
     for (size_t i=0; i<value.length(); ++i) {
       out << "&#" << (int) value[i] << ";";
     }
-    out << "/]";
+    out << "'''";
     } else if (type == Token::UNDERLINE_OPEN_MARK) 
     {
-    out << "[_";
+    out << "<u>";
     for (size_t i=0; i<value.length(); ++i) {
       out << "&#" << (int) value[i] << ";";
     }
-    out << "_]";
+    out << "</u>";
     } 
     else if (type == Token::BOLD_CLOSE_MARK) 
     {
-    out << "*]";
+    out << "''";
   } else if (type == Token::ITALIC_CLOSE_MARK) 
     {
-    out << "/]";
+    out << "''";
     } else if (type == Token::UNDERLINE_CLOSE_MARK) 
     {
-    out << "_]";
-    } else if (type == Token::TEXT) {
+    out << "</u>";
+  }
+	else if (type == Token::H1_OPEN)
+	{
+		out << "=";
+	}
+	else if (type == Token::H1_CLOSE)
+	{
+		out << "=";
+	}
+	else if (type == Token::TEXT) {
     out << "'";
     for (size_t i=0; i<value.length(); ++i) {
       out << "&#" << (int) value[i] << ";";

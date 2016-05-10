@@ -213,6 +213,9 @@
     <Text Include="command.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="command2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="ex1.md">

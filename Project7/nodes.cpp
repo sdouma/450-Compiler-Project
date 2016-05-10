@@ -39,9 +39,9 @@ void HeaderNode::print(std::ostream &out) const{
 int ParagraphNode::type() const { return PARAGRAPH; }
 
 void ParagraphNode::print(std::ostream &out) const {
-	out << "Paragraph[content=<i>";
+	out << "Paragraph[content=<p>";
     htmlencode(out,content);
-	out << "</i>]";
+	out << "</p>]";
 	Node::print(out);
 }
 
@@ -79,11 +79,11 @@ void EndingNode::print(std::ostream &out) const{
 int StartNode::type() const { return START_MARK; }
 
 void StartNode::print(std::ostream &out) const {
-	out << "<ul>" << std::endl;
+	out << "<b>" << std::endl;
 }
 
 int EndNode::type() const { return END_MARK; }
 
 void EndNode::print(std::ostream &out) const {
-	out << "</ul>" << std::endl;
+	out << "</b>" << std::endl;
 }

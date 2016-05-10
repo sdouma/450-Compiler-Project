@@ -128,7 +128,7 @@ public:
 		return ans;
 	}
 	
-	bool open_bold(){
+	bool open_boldz(){
 		
 #if TRACE == 1
 		std::cout << "open_bold()" << std::endl;
@@ -140,7 +140,7 @@ public:
 		return ans;
 	}
 	
-	bool close_bold(){
+	bool close_boldz(){
 		
 #if TRACE == 1
 		std::cout << "close_bold()" << std::endl;
@@ -200,16 +200,38 @@ public:
 		return ans;
 	}
 	
+	bool open_h1(){
+
+#if TRACE == 1
+		std::cout << "open_h1()" << std::endl;
+#endif
+		bool ans = !!token(Token::H1_OPEN);
+#if TRACE == 1
+		std::cout << "open_h1() = " << ans << std::endl;
+#endif
+		return ans;
+	}
+	bool close_h1(){
+
+#if TRACE == 1
+		std::cout << "close_h1()" << std::endl;
+#endif
+		bool ans = !!token(Token::H1_CLOSE);
+#if TRACE == 1
+		std::cout << "close_h1() = " << ans << std::endl;
+#endif
+		return ans;
+	}
 	bool bold(NodeSP &dom){
 #if TRACE == 1
 		std::cout<<"bold()"<<std::endl;
 #endif
 		Cursor at(this);
 		NodeSP domText;
-		bool ans = (at.reset() && open_bold() && statements(domText) && close_bold());
+		bool ans = (at.reset() && open_boldz() && statements(domText) && close_boldz());
 		if (ans) {
 			MarkupNode *node = new MarkupNode();
-			node->markup = L"''";
+			node->markup = L"\'\'";
 			node->children.push_back(domText);
 			dom=NodeSP(node);
 		}
@@ -236,7 +258,7 @@ public:
 		}
 #if TRACE == 1
 		if (ans) { std::cout << __LINE__ << "dom: "; dom->print(std::cout); std::cout << std::endl; }
-		std::cout << "italic() = " << ans << std::endl;
+		std::cout << "italicz() = " << ans << std::endl;
 #endif
 		return ans;
 		
@@ -262,7 +284,26 @@ public:
 		return ans;
 		
 	}
-	
+	bool h1(NodeSP &dom){
+#if TRACE == 1
+		std::cout << "h1()" << std::endl;
+#endif
+		Cursor at(this);
+		NodeSP domText;
+		bool ans = (at.reset() && open_h1() && statements(domText) && close_h1());
+		if (ans) {
+			MarkupNode *node = new MarkupNode();
+			node->markup = L"=";
+			node->children.push_back(domText);
+			dom = NodeSP(node);
+		}
+#if TRACE == 1
+		if (ans) { std::cout << __LINE__ << "dom: "; dom->print(std::cout); std::cout << std::endl; }
+		std::cout << "h1() = " << ans << std::endl;
+#endif
+		return ans;
+
+	}
 	bool sentence(NodeSP &dom) {
 #if TRACE == 1
 		std::cout << "sentence()" << std::endl;
@@ -271,6 +312,7 @@ public:
 		bool ans = (at.reset() && bold(dom))
 			|| (at.reset() && italic(dom))
 			|| (at.reset() && underline(dom))
+			|| (at.reset() && h1(dom))
 			|| (at.reset() && text(dom));
 #if TRACE == 1
 		if (ans) { std::cout << __LINE__ << "dom: "; dom->print(std::cout); std::cout << std::endl; }

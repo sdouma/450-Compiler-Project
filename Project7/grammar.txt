@@ -12,7 +12,7 @@ close_underline : UNDERLINE_CLOSE_MARK
 bold : open_bold statements close_bold
 italic : open_italic statements close_italic
 underline : open_underline statements close_underline
-sentence : bold | italic | underline | text
+sentence : bold | italic | underline | h1 |text
 header : markup TEXT EOL
 optional_header : header | /* null */
 paragraph : sentence rest_of_paragraph
@@ -23,12 +23,14 @@ start : optional_header statements eof
 EOF : -1
 EOL : '\r' or '\n'
 MARKUP: '#' (1 or more at beginning of file)
-BOLD_OPEN_MARK: "'''*"
-BOLD_CLOSE_MARK: ""
-ITALIC_OPEN_MARK: "[/"
-ITALIC_CLOSE_MARK: "/]"
-UNDERLINE_OPEN_MARK: "[_"
-UNDERLINE_CLOSE_MARK: "_]"
+BOLD_OPEN_MARK: "''*"
+BOLD_CLOSE_MARK: "''"
+ITALIC_OPEN_MARK: "'''"
+ITALIC_CLOSE_MARK: "'''"
+UNDERLINE_OPEN_MARK: "<u>"
+UNDERLINE_CLOSE_MARK: "</u>"
+H1_OPEN_MARK: "="
+H1_CLOSE_MARK: "="
 TEXT:  anything else
 
 
