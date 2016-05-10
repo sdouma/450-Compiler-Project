@@ -63,7 +63,6 @@ public:
   * shift 2
   * return token 
   * */
-
 	else if (isopen == true && sequence.peek() == '='){
 		sequence.shift(1);
 		isopen = false;
@@ -92,9 +91,10 @@ public:
 		if (isopen == true && sequence.peek() == '<' && sequence.peek(1) == '/' && sequence.peek(2) == 'u' && sequence.peek(3) == '>') break;
 		if (isopen == true && nextCode == '\'' && sequence.peek(1) == '\'' && sequence.peek(2) == '\'') break;
 		if (isopen == true && nextCode == '=') break;
-		if (nextCode == '\'' && sequence.peek(2) != '\'') break;
-        if (nextCode == '[' && sequence.peek(1) == '_') break;
-        if (nextCode == '[' && sequence.peek(1) == '/') break;            
+		if (nextCode == '\'' && sequence.peek(1) == '\'' && sequence.peek(2) != '\'') break;
+		if (sequence.peek() == '<' && sequence.peek(2) == 'u' && sequence.peek(3) == '>') break;
+		if (nextCode == '\'' && sequence.peek(1) == '\'' && sequence.peek(2) == '\'') break;
+		if (nextCode == '=') break;
         if (nextCode != -1 && nextCode != '\n' && nextCode != '\r') {
           ans.append(1,(wchar_t)nextCode);
           sequence.shift();

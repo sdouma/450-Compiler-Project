@@ -1,29 +1,12 @@
 ========================================================================
-    MAKEFILE PROJECT : Project4 Project Overview
+   Overview 450 compiler project
 ========================================================================
+1. cd into directory project 7 and run parser.bat with an argument i.e. parser.bat ex1.md
+2. Sorry they are all in the same directory I was just having issues even though I had defined my directories correctly in VS so they are all in one directory.
 
-AppWizard has created this Project4 project for you.  
-
-This file contains a summary of what you will find in each of the files that
-make up your Project4 project.
-
-
-Project4.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard. 
-    It contains information about the version of Visual C++ that generated the file, and 
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-Project4.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-This project allows you to build/clean/rebuild from within Visual Studio by calling the commands you have input 
-in the wizard. The build command can be nmake or any other tool you use.
-
-This project does not contain any files, so there are none displayed in Solution Explorer.
-
-/////////////////////////////////////////////////////////////////////////////
+What I did?
+When I left we had defined the grammar (underline, bold, italics) so I went and made tokens for and added h1. 
+I ,of course, changeg markdown scanner to handle all the grammar
+I also tried to change the markdown to handle wiki notations of the same type. 
+I had several issues with the scanner not compiling so I changed that and and the utf8sequences so VS could handle it.
+I updated changed and updated the parser along with that
